@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BenefitsPro - Employee Benefits Administration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon">📊</span> BenefitsPro
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Solutions</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" id="login-btn">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Simplify Your Benefits Administration</h1>
+            <p>Manage employee benefits with ease, improve engagement, and drive better outcomes for your organization.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary">Request Demo</a>
+                <a href="#" class="btn btn-outline">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="section-title">
+            <h2>Comprehensive Benefits Management</h2>
+            <p>Everything you need to streamline your benefits administration process</p>
+        </div>
+        <div class="features-container">
+            <div class="feature-card">
+                <div class="feature-icon">🏥</div>
+                <h3>Health Insurance</h3>
+                <p>Manage multiple plan options, enrollments, and claims all in one place. Simplify the complexities of health benefits.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💰</div>
+                <h3>Retirement Plans</h3>
+                <p>Administer 401(k), pension, and other retirement programs with automated contributions and compliance reporting.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🧘</div>
+                <h3>Wellness Programs</h3>
+                <p>Create, track, and reward employee participation in wellness initiatives to promote healthier lifestyles.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Preview Section -->
+    <section class="dashboard">
+        <div class="dashboard-container">
+            <div class="dashboard-content">
+                <h2>Powerful HR Dashboard</h2>
+                <p>Get a comprehensive view of your benefits administration with our intuitive dashboard. Make data-driven decisions and identify trends at a glance.</p>
+                <ul>
+                    <li>Real-time enrollment analytics</li>
+                    <li>Cost tracking and forecasting</li>
+                    <li>Compliance monitoring</li>
+                    <li>Employee engagement metrics</li>
+                </ul>
+                <a href="#" class="btn btn-primary">See It In Action</a>
+            </div>
+            <div class="dashboard-image">
+                <img src="images/pic1.jpg" alt="Dashboard Preview">
+            </div>
+        </div>
+    </section>
+
+    <!-- Employee Portal Section -->
+    <section class="employee-portal">
+        <div class="section-title">
+            <h2>Employee Self-Service Portal</h2>
+            <p>Empower your employees with 24/7 access to their benefits information</p>
+        </div>
+        <div class="tabs">
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-tab="enrollment">Benefits Enrollment</button>
+                <button class="tab-btn" data-tab="health">Health Insurance</button>
+                <button class="tab-btn" data-tab="retirement">Retirement</button>
+                <button class="tab-btn" data-tab="wellness">Wellness Programs</button>
+            </div>
+            <div class="tab-content">
+                <div id="enrollment" class="tab-panel active">
+                    <h3>Simplified Benefits Enrollment</h3>
+                    <p>Our intuitive enrollment process guides employees through available options and helps them make informed decisions about their benefits package.</p>
+                    <div class="benefit-cards">
+                        <div class="benefit-card">
+                            <h4>Open Enrollment</h4>
+                            <p>Annual enrollment period with guided selection process and comparison tools.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h4>Life Events</h4>
+                            <p>Special enrollment options for qualifying life events like marriage or new child.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h4>New Hire Onboarding</h4>
+                            <p>Streamlined benefits selection process for new employees.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="health" class="tab-panel">
+                    <h3>Health Insurance Management</h3>
+                    <p>Access and manage health insurance plans, track claims, and find in-network providers with ease.</p>
+                    <div class="benefit-cards">
+                        <div class="benefit-card">
+                            <h4>Plan Comparison</h4>
+                            <p>Side-by-side comparison of available health plans and coverage options.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h4>Claims Tracking</h4>
+                            <p>Monitor status of submitted claims and review explanation of benefits.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h4>Provider Directory</h4>
+                            <p>Search tool to find in-network doctors, facilities, and specialists.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="retirement" class="tab-panel">
+                    <h3>Retirement Planning Tools</h3>
+                    <p>Monitor retirement accounts, adjust contribution levels, and use planning calculators to prepare for the future.</p>
+                    <div class="benefit-cards">
+                        <div class="benefit-card">
+                            <h4>Account Management</h4>
+                            <p>View balances, contributions, and investment allocations in real-time.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h4>Contribution Settings</h4>
+                            <p>Easily adjust contribution amounts and set automatic increases.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h4>Retirement Calculator</h4>
+                            <p>Project future savings and determine if you're on track to meet goals.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="wellness" class="tab-panel">
+                    <h3>Wellness Program Integration</h3>
+                    <p>Participate in wellness challenges, track progress, and earn rewards for healthy behaviors.</p>
+                    <div class="benefit-cards">
+                        <div class="benefit-card">
+                            <h4>Activity Tracking</h4>
+                            <p>Connect wearable devices to log physical activity and earn points.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h4>Wellness Challenges</h4>
+                            <p>Join team and individual wellness challenges throughout the year.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h4>Health Resources</h4>
+                            <p>Access to educational content, coaching, and preventive care information.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="testimonials-container">
+            <div class="section-title">
+                <h2>What Our Clients Say</h2>
+                <p>Hear from HR professionals who have transformed their benefits administration</p>
+            </div>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <p>"BenefitsPro has revolutionized how we manage employee benefits. The self-service portal has reduced our administrative burden by 70% while improving employee satisfaction."</p>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="images/person1.jpg" alt="Sarah Johnson">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>HR Director, Acme Inc.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The analytics dashboard gives us incredible insights into benefit utilization and costs. We've been able to optimize our offerings and save over $200,000 annually."</p>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="images/person2.avif" alt="Michael Chen">
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <p>Benefits Manager, Tech Solutions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Our employees love the intuitive portal and mobile access to their benefits information. Enrollment completion rates increased by 95% in the first year!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="images/person3.webp" alt="Lisa Martinez">
+                        </div>
+                        <div class="author-info">
+                            <h4>Lisa Martinez</h4>
+                            <p>VP of Human Resources, Global Retail</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-container">
+            <h2>Ready to Transform Your Benefits Administration?</h2>
+            <p>Join thousands of organizations that have streamlined their benefits management with BenefitsPro.</p>
+            <a href="#" class="btn btn-outline">Schedule a Demo</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <a href="#" class="footer-logo">BenefitsPro</a>
+                <p>Simplifying benefits administration for HR professionals and employees worldwide.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Solutions</h3>
+                <ul>
+                    <li><a href="#">Health Benefits</a></li>
+                    <li><a href="#">Retirement Plans</a></li>
+                    <li><a href="#">Wellness Programs</a></li>
+                    <li><a href="#">Compliance</a></li>
+                    <li><a href="#">Reporting</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Guides</a></li>
+                    <li><a href="#">Webinars</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Leadership</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 BenefitsPro. All rights reserved. | Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="modal-title">Sign In to Your Account</h2>
+            <form>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" class="form-control" placeholder="Enter your username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="form-control" placeholder="Enter your password">
+                </div>
+                <button type="button" class="login-btn">Sign In</button>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Tab functionality
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabPanels = document.querySelectorAll('.tab-panel');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Remove active class from all buttons and panels
+                tabBtns.forEach(btn => btn.classList.remove('active'));
+                tabPanels.forEach(panel => panel.classList.remove('active'));
+                
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                // Show corresponding panel
+                const tabId = this.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+
+        // Modal functionality
+        const modal = document.getElementById('login-modal');
+        const loginBtn = document.getElementById('login-btn');
+        const closeModal = document.querySelector('.close-modal');
+
+        loginBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            modal.classList.add('show');
+        });
+
+        closeModal.addEventListener('click', function() {
+            modal.classList.remove('show');
+        });
+
+        window.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>
